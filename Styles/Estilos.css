@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 2px;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    
+}
+.contenido{
+    margin: auto;
+    padding-top: 15px;
+    border-radius: 2px;
+    height: 650px;
+    width: 1200px;
+
+}
+.datos{
+    height: 540px;
+    width: 520px;
+    
+    float: left;
+}
+.resultado{
+    height: 620px;
+    width: 520px;
+    float: right;
+}
+.devengando, .recargos, .extras, .deducciones, .resultadoTotal{
+    width: 500px;
+   
+    font-size: 23px;
+}
+
+.buttonCalcular{
+    float: left;
+    position: relative;
+    left: 35%;
+    width: 200px;
+    height: 100px;
+    font-size: 27px;
+}
+
+
+.inputs, .cortos{
+    border-radius: 2px;
+    outline: none;
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
+    border-width: 1px;
+    text-align: center;
+
+}
+.valores{
+    border-radius: 2px;
+    outline: none;
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    border-width: 1px;
+    text-align: center;
+}
+
+

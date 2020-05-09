@@ -1,0 +1,84 @@
+<html>
+    <head><!--Encabezado-->
+        <title>Mi Salario Colombia</title>
+        <meta charset=”utf-8”/><!--para carácteres especiales-->
+        <link rel="stylesheet" href="Styles/Estilos.css">
+    </head>
+    <body>
+        <h1 align="center">Calculadora Salarial Colombia</h1>
+        <div class="contenido">
+
+            <div class="datos">
+                <div class=Devengando>
+
+                <!--salto de línea-->
+                <fieldset>
+                    <legend>Tus datos</legend>
+                            <p>Tu salario: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="valores" min="0" maxlength="10" id="salario" value="0"> </p> 
+                            <p>Bono no Salarial: <input type="number" class="valores" min="0" maxlength="10"  id="Bono" value="0"> </p>
+                            <p>Anticipo (%) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="inputs" min="0" max="60" maxlength="2" id="anticipo" value="0"></p>
+                    </fieldset>
+                    <br>
+                </div>
+
+                <div class=Recargos>
+                    <fieldset>
+                        <legend>Tus Recargos</legend>
+                            <p>Nocturno (35%) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" class="inputs" max="100" min="0" maxlength="2"  id="RNocturno" value="0"> <output id="CantiRNocturno" class="cortos"></output></p> 
+                            <p>Festivo Diurno (175%) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="inputs" max="100" min="0" maxlength="2"  id="RFDiurno" value="0"> <output id="CantiRFDiurno" class="cortos"></output></p> 
+                            <p>Festivo Nocturno (210%) <input type="number" class="inputs" max="100" min="0" maxlength="2"  id="RFNocturno" value="0"> <output id="CantiRFNocturno" class="cortos"></output></p>
+                    </fieldset>
+                    <br>
+                </div>
+
+                <div class=Extras>
+                    <fieldset>
+                    <legend>Tus Horas Extras</legend>
+                            <p>Diurna (125%) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="inputs" max="40" min="0" maxlength="2"  id="EDiurna" value="0"> <output id="CantiEDiurnas" class="cortos"></output> </p> 
+                            <p>Nocturna (175%) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" class="inputs" max="40" min="0" maxlength="2"  id="ENocturna" value="0"> <output id="CantiENocturnas" class="cortos"></output></p> 
+                            <p>Diurna Festiva (200%) &nbsp;&nbsp;&nbsp;&nbsp; <input type="number" class="inputs" max="40" min="0" maxlength="2"  id="EDFestiva" value="0"> <output id="CantiEFestivas" class="cortos"></output> </p> 
+                            <p>Nocturna Festiva (250%) <input type="number" class="inputs" max="40" min="0" maxlength="2"  id="ENFestiva" value="0"> <output id="CantiEFNocturnas" class="cortos"></output></p> 
+                    </fieldset>
+                    <br>
+                </div>
+            </div>  
+            <div class="resultado">
+                
+                <div class="resultadoTotal">
+                    <fieldset>
+                        <legend><b>Resumen</b></legend>
+                            <p>Tu salario = <output type="text" id="valorSalario" class="valores"></output></p>
+                            <p>Valor Hora = <output type="text" id="valorHora" class="valores"> </p>
+                            <p>Auxilio de Transporte = <output id="ValorAuxTrans" class="valores"></output></p>
+                            <p>Bono No Salarial = <output id="ValorBono" class="valores"></output></p>
+                            <p>Total Recargos = <output id="ValorRecargos" class="valores"></output></p>
+                            <p>Total Horas Extras = <output id="ValorExtras" class="valores"></output></p>
+                            <p><b>Deducciones</b></p>
+                            <p>Anticipo<output id="porAnticipo" class="valores"></output>% =<output id="valorAnticipo" class="valores"></output></p> 
+                            <p>Salud (4%) =<output id="salud" class="cortos"></output></p>
+                            <p>Pensión (4%) =<output id="pension" class="cortos"></output></p>
+                            <p><b>Totales</b></p>
+                            <p>Total Devengado = <output id="totalDevengado" class="cortos"></output></p>
+                            <p>Total Deducciones = <output id="totalDeducciones" class="cortos"></output></p>
+                            <p>Neto a Pagar = <output id="netoPagar" class="cortos"></output></p>
+                    </fieldset>
+                    <br>
+                 </div>
+
+                 <div class="boton">
+                   <!-- --> <input type="button" class="buttonCalcular" value="Calcular" onclick="calcular()">
+                    <br><br><br><br><br><br><br><br><br>
+                                      
+                    
+                </div>
+                    
+
+            </div>
+            
+         </div>
+         <p align="center">By David Castro G.</p>
+        <script src="js/script.js"></script>
+
+
+    </body>
+</html>
