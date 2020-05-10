@@ -82,6 +82,9 @@ footer{
 
 @media screen and (max-width: 400px){
     .contenido{
-        width: 80%;
+        width: 100%;
     }
+    .datos{
+    width: 45%;
+}
 }
