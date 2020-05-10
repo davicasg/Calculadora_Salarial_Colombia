@@ -3,14 +3,13 @@
         <title>Mi Salario Colombia</title>
         <meta charset=”utf-8”/><!--para carácteres especiales-->
         <link rel="stylesheet" href="Styles/Estilos.css">
+        <meta name="viewport" content="with=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <body>
         <h1 align="center">Calculadora Salarial Colombia</h1>
         <div class="contenido">
-
             <div class="datos">
                 <div class=Devengando>
-
                 <!--salto de línea-->
                 <fieldset>
                     <legend>Tus datos</legend>
@@ -39,11 +38,17 @@
                             <p>Diurna Festiva (200%) &nbsp;&nbsp;&nbsp;&nbsp; <input type="number" class="inputs" max="40" min="0" maxlength="2"  id="EDFestiva" value="0"> <output id="CantiEFestivas" class="cortos"></output> </p> 
                             <p>Nocturna Festiva (250%) <input type="number" class="inputs" max="40" min="0" maxlength="2"  id="ENFestiva" value="0"> <output id="CantiEFNocturnas" class="cortos"></output></p> 
                     </fieldset>
-                    <br>
+                    
                 </div>
             </div>  
             <div class="resultado">
                 
+                <div class="boton">
+                    <!-- --> <input type="button" class="buttonCalcular" value="Calcular" onclick="calcular()">
+                     <br>
+                                       
+                 </div>
+
                 <div class="resultadoTotal">
                     <fieldset>
                         <legend><b>Resumen</b></legend>
@@ -65,20 +70,18 @@
                     <br>
                  </div>
 
-                 <div class="boton">
-                   <!-- --> <input type="button" class="buttonCalcular" value="Calcular" onclick="calcular()">
-                    <br><br><br><br><br><br><br><br><br>
-                                      
-                    
-                </div>
+
                     
 
             </div>
             
          </div>
-         <p align="center">By David Castro G.</p>
+         <!--<p align="center">By David Castro G.</p>-->
         <script src="js/script.js"></script>
-
+        <footer>
+            <p >By David Castro G.</p>
+        </footer>
 
     </body>
+
 </html>

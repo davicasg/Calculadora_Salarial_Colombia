@@ -6,36 +6,42 @@
 }
 .contenido{
     margin: auto;
-    padding-top: 15px;
+    padding: 15px;
     border-radius: 2px;
-    height: 650px;
-    width: 1200px;
+    /*height: 650px;
+    width: 1200px;*/
+    max-width: 1200px;
+    width: 85%;
 
 }
-.datos{
-    height: 540px;
-    width: 520px;
+footer{
     
+    clear: both;
+    text-align: center;
+}
+.datos{
+    height: auto;
+    width: 45%;
     float: left;
+    box-sizing: border-box;
 }
 .resultado{
-    height: 620px;
-    width: 520px;
+    height: auto;
+    width: 45%;
     float: right;
+    box-sizing: border-box;
 }
 .devengando, .recargos, .extras, .deducciones, .resultadoTotal{
-    width: 500px;
-   
+    width: 100%;
     font-size: 23px;
 }
 
 .buttonCalcular{
-    float: left;
-    position: relative;
-    left: 35%;
-    width: 200px;
-    height: 100px;
-    font-size: 27px;
+    width: 160px;
+    height: 70px;
+    font-size: 30px;
+    margin-left: 35%;
+    box-sizing: border-box;
 }
 
 
@@ -57,6 +63,25 @@
     font-size: 20px;
     border-width: 1px;
     text-align: center;
+    
+}
+.boton{
+    width: 100%;
+    height: auto;
+
 }
 
+@media screen and (max-width: 900px){
+    .datos{
+        width: 100%;
+    }
+    .resultado{
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 500px){
+    .contenido{
+        width: 100%;
+    }
+}
