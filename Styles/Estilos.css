@@ -82,6 +82,6 @@ footer{
 
 @media screen and (max-width: 400px){
     .contenido{
-        width: 95%;
+        width: 80%;
     }
 }
