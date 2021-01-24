@@ -7,7 +7,7 @@ separador.addEventListener("keyup", event=>{
 function calcular(){
     var anticipo=parseInt(document.getElementById("anticipo").value);//Se obtiene el porcentaje del anticipo
     anticipo=anticipo/100;
-    var AuxTransporte=102854;
+    var AuxTransporte=106454;
     var salario=parseInt(document.getElementById("salario").value);//Se obtiene el sueldo basico
     var valorHora=salario/30/8;//se calcula el valor de la hora
     
@@ -33,7 +33,7 @@ function calcular(){
     var totalRecargos=RNocturno+RFDiurno+RFNocturno;
     var totalExtras=EDiurna+ENocturna+EDFestiva+ENFestiva;
 
-    if(salario>877803){
+    if(salario>908526){
         if(anticipo>=0 && anticipo<=0.9){
             if(RNocturno>=0 && RFNocturno>=0 && RFDiurno>=0 && EDiurna>=0 && ENocturna>=0 && EDFestiva>=0 && ENFestiva>=0){
                 if(totalRecargos<=240 ){
@@ -41,7 +41,7 @@ function calcular(){
                             document.getElementById("valorHora").value=numberFormat2.format(valorHora);//Se Muestra el valor de la hora
 
                             //Validación Auxilio de trasnporte
-                            if(salario<=1754460){
+                            if(salario<=1817052){
                                 document.getElementById("ValorAuxTrans").value=numberFormat2.format(AuxTransporte);//En caso de ser menor de 2 SMLV
                             }else{
                                 document.getElementById("ValorAuxTrans").value="$ 0";//En caso de superar los 2 SMLV
